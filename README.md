@@ -1,8 +1,26 @@
 # Jaswanth Portfolio
 
-A stunning, modern portfolio website built with React, TypeScript, Vite, and Tailwind CSS. Features innovative UI patterns, smooth animations, and full accessibility compliance.
+<div align="center">
+
+## Hi, I'm Jaswanth 👋
+
+### Front-End Developer specialized in React, TypeScript, and Vite
+
+I build responsive, high-performance web applications and enjoy turning design concepts into clean, maintainable code.
+
+**Tech Stack:** React | Vite | TypeScript | Redux | Jest | Java (Spring Boot) | Git | Azure DevOps
 
 ![Portfolio Preview](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Vite](https://img.shields.io/badge/Vite-Latest-purple) ![Tailwind](https://img.shields.io/badge/Tailwind-4-cyan)
+
+</div>
+
+---
+
+## 🖼️ Portfolio Preview
+
+![Portfolio Screenshot](./portfolio-screenshot.png)
+
+A stunning, modern portfolio website featuring innovative UI patterns, smooth animations, and full accessibility compliance.
 
 ## ✨ Features
 
@@ -246,9 +264,10 @@ Contributions, issues, and feature requests are welcome!
 
 ## 💬 Contact
 
-- Email: jaswanth@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/jaswanth-dev)
-- GitHub: [Your GitHub](https://github.com/jaswanth-dev)
+- Email: Jaswanth9841@gmail.com
+- LinkedIn: [Jaswanth Neppolian](https://www.linkedin.com/in/jaswanthneppolian)
+- GitHub: [Jaswanth9841](https://github.com/Jaswanth9841)
+- Phone: +91 9551344553
 
 ## ⭐ Show Your Support
 
