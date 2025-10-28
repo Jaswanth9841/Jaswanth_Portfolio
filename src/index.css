@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Use JS-based smooth scrolling for better performance */
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+  }
+  
+  /* Optimize rendering performance */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Use GPU acceleration for transforms */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500 dark:bg-gray-500;
+  }
+
+  /* Focus visible styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-950;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 via-blue-500 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  /* Glass effect - optimized for performance */
+  .glass {
+    @apply bg-white/80 dark:bg-gray-900/80 border border-gray-200/50 dark:border-gray-700/50;
+    /* Removed backdrop-blur for better scroll performance */
+  }
+
+  /* Skip to content link */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-[9999] px-4 py-2 bg-primary-500 text-white rounded-md focus:top-4 transition-all;
+  }
+
+  /* Grain overlay - removed for better performance */
+  .grain {
+    position: relative;
+  }
+  
+  /* Subtle gradient instead of grain for better performance */
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.02;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.02) 0%, transparent 50%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .grain::before {
+      display: none;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
